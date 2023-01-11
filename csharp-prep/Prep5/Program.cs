@@ -4,11 +4,11 @@ class Program
 {
     static void Main(string[] args)
     {
-        displayWelcome();
-        string userName = promptUserName();
-        int number = favoriteNumber();
-        int numberSquared = squareNumber(number);
-        displayResults(userName, numberSquared);
+        DisplayWelcome();
+        string userName = PromptUserName();
+        int number = FavoriteNumber();
+        int numberSquared = SquareNumber(number);
+        DisplayResults(userName, numberSquared);
     }
 
     static void DisplayWelcome()
