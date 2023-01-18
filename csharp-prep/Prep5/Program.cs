@@ -1,4 +1,5 @@
 using System;
+using System.Diagnostics;
 
 class Program
 {
@@ -33,6 +34,7 @@ class Program
     static int SquareNumber(int number)
     {
         int squaredNumber = number * number;
+        Debug.Assert(squaredNumber >= 0, "squared number should not be negative");
         return squaredNumber;
     }
 
